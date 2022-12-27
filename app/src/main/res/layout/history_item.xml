@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#E5E4E2"
+    android:layout_margin="4dp"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+   app:contentPadding="10dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical|start"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 Apr 1990" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="12:45 AM" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/from_or_to_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From/To" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/other_party_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sender / Receiver Number"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sent_or_received_tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|end"
+        android:background="@drawable/sent_or_received_shape"
+        android:backgroundTint="#00ff00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sent\n+20"
+        android:textColor="@color/black" />
+</androidx.cardview.widget.CardView>
